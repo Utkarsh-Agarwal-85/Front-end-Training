@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <style>
+        table,
+        tc,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>tables</h1>
+    <table style="width:50%">
+
+        <tr>
+            <th colspan="7">Time Table</th>
+        </tr>
+
+        <tr>
+        <td rowspan="6" width="2">hours</td>
+            <td>Mon</td>
+            <td>Tue</td>
+            <td>Wed</td>
+            <td>Thr</td>
+            <td>Fri</td>
+            <td>Sat</td>
+        </tr>
+        <tr>
+            <td>sports</td>
+            <td>sports</td>
+            <td>sports</td>
+            <td>sports</td>
+            <td>sports</td>
+            <td>sports</td>
+        </tr>
+        <tr>
+            <td>sports</td>
+            <td>sports</td>
+            <td>sports</td>
+            <td>sports</td>
+            <td>sports</td>
+            <td>sports</td>
+        </tr>
+        <th colspan="7">lunch</th>
+        <tr>
+            <td>sports</td>
+            <td>sports</td>
+            <td>sports</td>
+            <td>sports</td>
+            <td>sports</td>
+            <td rowspan="2">games</td>
+        </tr>
+        <tr>
+            <td>sports</td>
+            <td>sports</td>
+            <td>sports</td>
+            <td>sports</td>
+            <td>sports</td>
+            <!-- <td>games</td> -->
+        </tr>
+    </table>
 </body>
+
 </html>
