@@ -2,6 +2,13 @@
 <html>
 <head>
     <title> INDEX.HTML</title>
+    <style>
+        .required:after {
+          content:"*";
+          color: red;
+        }
+      </style>
+
 </head>
 <body>
     <!-- <a href="gps assignment.pdf">Download</a>
@@ -67,5 +74,80 @@
         <li>CSS</li>
         <li>JavaScript</li>
     </ul>
+    <form>
+        <fieldset>
+            <legend>Presonal Details </legend>
+            <label for="fname" style="padding-right: 30px;">First name:</label>
+            <input type="text" id="First Name" name="First Name" style="padding-right: 30px;"><br>
+            <br>
+            <label for="lname" style="padding-right: 30px;">Last name:</label>
+            <input type="text" id="Last Name" name="Last Name" style="padding-right: 30px;"><br>
+            <br>
+            <label for="email" style="padding-right: 50px;">Email:</label>
+            <input type="email" id="email" name="email" style="padding-right: 40px;"><br>
+            <br>
+            <label for="Birthday" style="padding-right: 30px;">Birthday:</label>
+            <input type="date" id="birthday" style="padding-right: 30px;"><br>
+            <br>
+            <input type="Submit" value="Sumbit">
+        </fieldset>
+    </form><br>
+    <form>
+        <fieldset>
+            <legend>CONTACT DETALIS</legend>
+            <label for="Name" class="required">Name</label>
+            <input type="text" required><br>
+            <br>
+            <label for="Telephone">Telephone</label>
+            <input type="tel" pattern="[1-9]{1}[0-9]{9}" maxlength="10" mask=><br>
+            <br>
+            <label for="email" class="required">Email</label>
+            <input type="email" id="email" name="email" required><br>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>PERSONAL INFORMATION</legend>
+            <label for="Age" class="required">Age</label>
+            <input type="" required><br>
+            <br>
+            <label for="gender">Gender</label>
+            <select id="gender"><br>
+                <br>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option><br>
+                <br>
+            </select><br>
+            <br>
+            <label for="Feedback">
+                When did you First Know you wanted to be a zoo-keeper? </label><br>
+                <br>
+            <textarea style="overflow-y: scroll;" rows="4" cols="50" name="">
+            </textarea>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>PICK YOUR FAVORTIE ANIMALS </legend>
+            <input type="checkbox" id="animal1" name="animal1" value="animal">
+            <label for="animal1"> Zebra</label>
+            <input type="checkbox" id="animal2" name="animal2" value="animal">
+            <label for="animal2">Cat</label>
+            <input type="checkbox" id="animal3" name="animal3" value="animal">
+            <label for="animal3"> Anaconda</label>
+            <input type="checkbox" id="animal4" name="animal4" value="animal">
+            <label for="animal4"> Human</label><br>
+            <input type="checkbox" id="animal5" name="animal5" value="animal">
+            <label for="animal5">Elephant</label>
+            <input type="checkbox" id="animal6" name="animal6" value="animal">
+            <label for="animal6">Wildebeest</label>
+            <input type="checkbox" id="animal7" name="animal7" value="animal">
+            <label for="animal7">Pigeon</label>
+            <input type="checkbox" id="animal8" name="animal8" value="animal">
+            <label for="animal8">Crab</label>
+        </fieldset>
+        <br>
+        <input type="Submit" value="Sumbit Application">
+    </form>
 </body>
 </html>
